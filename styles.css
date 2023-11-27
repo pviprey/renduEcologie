@@ -121,7 +121,7 @@ main{
 }
 
 .anchor{
-    scroll-margin-top: 3em;
+    scroll-margin-top: calc(3em - 15px);
 }
 
 .question{
@@ -140,6 +140,7 @@ h1.title{
 
     font-size: 3rem;
     font-style: 'Roboto', sans-serif;
+    font-weight: bold;
     /* border */
 }
 h1.title > .underline{
@@ -223,26 +224,6 @@ Responsive part of the website
         transition: all 0.25s ease-in;
     }
 }
-@media only screen and (max-width: 1300px){
-    a:nth-child(4n) > span{
-        border-right: 0px;
-    }
-    a:nth-child(5n){
-        text-align: center;
-        width: 100%;
-    }    
-    header{
-        height: 6em;
-        transition: all 0.25s ease-in;
-    }
-    header > a > span{
-        font-size: 1.7em;
-        transition: all 0.25s ease-in;
-    }
-    .anchor{
-        scroll-margin-top: 3em;
-    }
-}
 @media only screen and (max-width: 850px){
     header{
         transition: all 0.25s ease-in;
@@ -250,23 +231,5 @@ Responsive part of the website
     }
     header > a > span{
         font-size: 0em;
-    }
-
-    a:nth-child(5n){  
-        width: 0;
-    }
-}
-
-@media only screen and (max-device-width: 500px){
-    header{
-        transition: font-size 0.25s ease-in;
-        height: 0em;
-    }
-    header > a > span{
-        font-size: 0em;
-    }
-
-    a:nth-child(5n){  
-        width: 0;
     }
 }
